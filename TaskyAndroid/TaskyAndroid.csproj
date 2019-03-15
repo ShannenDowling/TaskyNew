@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -19,6 +19,10 @@
     <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\shann\AppData\Local\Xamarin\Mono for Android\Keystore\taskyTest\taskyTest.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>twuipt4i</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>taskyTest</AndroidSigningKeyAlias>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -72,12 +76,7 @@
     <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\values\Styles.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable-mdpi\" />
-    <Folder Include="Resources\drawable-hdpi\" />
-    <Folder Include="Resources\drawable-ldpi\" />
-    <Folder Include="Resources\drawable-xhdpi\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="..\TaskySharedCode\TaskySharedCode.projitems" Label="Shared" Condition="Exists('..\TaskySharedCode\TaskySharedCode.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
