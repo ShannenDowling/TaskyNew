@@ -65,5 +65,7 @@ namespace TaskyAndroid.Screens
 			//Hook up our adapter to our ListView
 			taskListView.Adapter = taskList;
 		}
+
+        //Test auto build
 	}
 }
