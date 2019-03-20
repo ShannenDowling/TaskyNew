@@ -30,6 +30,13 @@ namespace TaskyUITest
         {
             app.Screenshot("First screen.");
         }
+
+        // https://nftb.saturdaymp.com/today-i-learned-how-to-create-xamarin-ios-and-android-unit-tests/
+        [Test]
+        public void SmokeTest()
+        {
+            Assert.That(true);
+        }
     }
 }
 
