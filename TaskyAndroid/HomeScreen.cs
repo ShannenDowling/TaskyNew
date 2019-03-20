@@ -7,6 +7,9 @@ using Tasky.Shared;
 using TaskyAndroid;
 using TaskyAndroid.ApplicationLayer;
 using Android.Content.PM;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace TaskyAndroid.Screens 
 {
@@ -51,7 +54,9 @@ namespace TaskyAndroid.Screens
 					StartActivity (taskDetails);
 				};
 			}
-		}
+
+            AppCenter.Start("c70ef433-9fec-4be4-a0d0-865d90cc0254", typeof(Analytics), typeof(Crashes));
+        }
 		
 		protected override void OnResume ()
 		{
