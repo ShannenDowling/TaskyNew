@@ -41,28 +41,29 @@ namespace TaskyUITest
         [Test]
         public void EnterTextExample()
         {
-            app.Screenshot("First screen.");
-            app.Tap(x => x.Marked("Add Task"));
-            app.Tap(x => x.Text("Item name"));
+            app.Screenshot("First screen - Enter text test.");
+            //app.Tap(x => x.Marked("Add Task"));
+            //app.Tap(x => x.Text("Item name"));
 
-            app.Screenshot("Before calling EnterText");
-            app.EnterText("The test worked!");
-            app.Screenshot("Text entered");
-            app.Back();
+            //app.Screenshot("Before calling EnterText");
+            //app.EnterText("The test worked!");
+            //app.Screenshot("Text entered");
+            //app.Back();
         }
 
         // https://github.com/King-of-Spades/AppCenter-Test-Samples/blob/master/Xamarin.UITest/UITestDemo/UITestDemo.UITest
         [Test]
         public void ClearTextExample()
         {
-            app.Tap(x => x.Marked("Add Task"));
-            app.Tap(x => x.Text("Item name"));
+            app.Screenshot("First screen - Clear text test.");
+            //app.Tap(x => x.Marked("Add Task"));
+            //app.Tap(x => x.Text("Item name"));
 
-            app.Screenshot("Before calling ClearText");
-            app.ClearText();
-            app.EnterText("The test worked!");
-            app.Screenshot("Text cleared & replaced");
-            app.Back();
+            //app.Screenshot("Before calling ClearText");
+            //app.ClearText();
+            //app.EnterText("The test worked!");
+            //app.Screenshot("Text cleared & replaced");
+            //app.Back();
         }
     }
 }
