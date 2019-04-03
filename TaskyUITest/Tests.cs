@@ -32,11 +32,11 @@ namespace TaskyUITest
         }
 
         // https://nftb.saturdaymp.com/today-i-learned-how-to-create-xamarin-ios-and-android-unit-tests/
-        [Test]
-        public void SmokeTest()
-        {
-            Assert.That(true);
-        }
+        //[Test]
+        //public void SmokeTest()
+        //{
+        //    Assert.That(true);
+        //}
 
         [Test]
         public void EnterTextExample()
