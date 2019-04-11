@@ -43,7 +43,7 @@ namespace TaskyUITest
         {
             app.Screenshot("First screen - Enter text test.");
             app.Tap(x => x.Marked("Add Task"));
-            app.Tap(x => x.Text("Item name"));
+            app.Tap(x => x.Text("Name"));
 
             app.Screenshot("Before calling EnterText");
             app.EnterText("The test worked!");
@@ -60,8 +60,8 @@ namespace TaskyUITest
             app.Tap(x => x.Text("Name"));
 
             app.Screenshot("Before calling ClearText");
-            app.ClearText();
             app.EnterText("The test worked!");
+            app.ClearText();
             app.Screenshot("Text cleared & replaced");
             app.Back();
         }
