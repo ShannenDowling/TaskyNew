@@ -78,6 +78,28 @@ namespace TaskyUITest
             app.Screenshot("Saved");
             app.Back();
         }
+
+        [Test]
+        public void ListTaskExample()
+        {
+            app.Screenshot("First screen - list tasks test.");
+            app.Tap(x => x.Marked("Add Task"));
+            app.Tap(x => x.Text("Name:"));
+            app.Screenshot("Before calling SaveText");
+            app.EnterText("New Task Test");
+            app.Screenshot("Text entered");
+            app.Tap(x => x.Marked("Save"));
+            app.Screenshot("Saved");
+            //add second task
+            app.Tap(x => x.Marked("Add Task"));
+            app.Tap(x => x.Text("Name:"));
+            app.Screenshot("Before calling SaveText");
+            app.EnterText("New Task Test 2");
+            app.Screenshot("Text entered");
+            app.Tap(x => x.Marked("Save"));
+            app.Screenshot("Saved");
+            app.Back();
+        }
     }
 }
 
