@@ -43,7 +43,10 @@ namespace TaskyAndroid.Screens
 			if(addTaskButton != null) {
 				addTaskButton.Click += (sender, e) => {
 					StartActivity(typeof(TodoItemScreen));
-				};
+
+                    //test generating crash
+                    Crashes.GenerateTestCrash();
+                };
 			}
 			
 			// wire up task click handler
@@ -57,7 +60,7 @@ namespace TaskyAndroid.Screens
 
             AppCenter.Start("c70ef433-9fec-4be4-a0d0-865d90cc0254", typeof(Analytics), typeof(Crashes));
 
-            Crashes.GenerateTestCrash();
+            //Crashes.GenerateTestCrash();
         }
 		
 		protected override void OnResume ()
