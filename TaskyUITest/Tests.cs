@@ -100,8 +100,6 @@ namespace TaskyUITest
             app.Screenshot("Saved");
             app.Back();
         }
-
-        //testing
     }
 }
 
