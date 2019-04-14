@@ -23,6 +23,7 @@
     <AndroidSigningKeyStore>C:\Users\shann\AppData\Local\Xamarin\Mono for Android\Keystore\taskyTest\taskyTest.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>twuipt4i</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>taskyTest</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>twuipt4i</AndroidSigningKeyPass>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
