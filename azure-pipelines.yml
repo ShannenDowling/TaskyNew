@@ -28,9 +28,9 @@ steps:
     
 - task: AppCenterTest@1
   inputs:
-    app: 'TaskyAndroid/com.xamarin.samples.taskyandroid.apk'
+    app: '../TaskyAndroid/com.xamarin.samples.taskyandroid.apk'
     framework: 'uitest'
-    uitestBuildDir: 'TaskyUITest/bin/Debug/new'
+    uitestBuildDir: '../TaskyUITest/bin/Debug/new'
     serverEndpoint: '366b9816-8e64-4376-ac81-247623fd3725'
     appSlug: 'https://appcenter.ms/users/shannen.dowling.it-hotmail.com/apps/Tasky'
     devices: 'One Test'
