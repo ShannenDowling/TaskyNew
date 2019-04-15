@@ -44,7 +44,7 @@ namespace TaskyAndroid.Screens
 				addTaskButton.Click += (sender, e) => {
 					StartActivity(typeof(TodoItemScreen));
 
-                    //test generating crash
+                    //test generating crash//
                     Crashes.GenerateTestCrash();
                 };
 			}
