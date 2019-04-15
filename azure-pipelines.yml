@@ -28,7 +28,7 @@ steps:
     
 - task: AppCenterTest@1
   inputs:
-    app: '**/*com.xamarin.samples.taskyandroid.apk'
+    app: '**/com.xamarin.samples.taskyandroid.apk'
     framework: 'uitest'
     uitestBuildDir: '**/*TaskyUITest/bin/Debug/new'
     serverEndpoint: '366b9816-8e64-4376-ac81-247623fd3725'
