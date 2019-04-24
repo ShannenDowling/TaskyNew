@@ -25,3 +25,4 @@ steps:
     projectFile: '**/*Droid*.csproj'
     outputDirectory: '$(outputDirectory)'
     configuration: '$(buildConfiguration)'
+    
