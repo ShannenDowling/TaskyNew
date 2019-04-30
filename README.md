@@ -1,5 +1,6 @@
 Tasky
 =====
+[![Build status](https://build.appcenter.ms/v0.1/apps/ec722dd3-75dd-4643-bbf2-964412c33ef9/branches/master/badge)](https://appcenter.ms)
 
 Tasky is a simple cross-platform todo/task application sample that allows
 you to track todo/task items.
